@@ -492,20 +492,23 @@ main {
             padding: 1px 0 50px 0;
         }
         select {
-            width: 100%;
+            width: 60%;
             font-size: 1rem;
             padding: 5px;
+            margin: 0 auto;
+            display: block;
         }
         button {
-            width: 100%;
+            width: 60%;
             font-size: 1.25rem;
-            margin: 20px 0 15px 0;
+            margin: 20px auto 15px auto;
             padding: 20px 0;
             background-color: #272829;
             color: white;
             border: none;
             cursor: pointer;
             transition: 0.4s;
+            display: block;
             &:hover {
                 background-color: #793B43;
             }
