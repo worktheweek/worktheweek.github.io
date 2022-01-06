@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Checkout example · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/checkout/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="../css/form-validation.css" rel="stylesheet">
+    <script src="../js/form-validation.js"></script>
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <h1><img src="../img/logo.png" alt="Shane Co Checkout" width="120px" /></h1>
+      <p class="lead">For a faster checkout,<br>
+        <a class="dummy">Login</a> or <a class="dummy">Create an account</a></p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Order Summary</span>
+          <span class="badge bg-primary rounded-pill">$16,635</span>
+        </h4>
+        <p>Estimated delivery Fri, Dec 15 2021</p>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Adagio Diamond Engagement Ring in 14k White Gold</h6>
+              <small class="text-muted">Size 7</small>
+            </div>
+            <span class="text-muted">$2,050</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Cushion Cut Diamond</h6>
+              <small class="text-muted">1 ctw.</small>
+            </div>
+            <span class="text-muted">$4,495</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Classic Diamond Halo Decorative Crown</h6>
+            </div>
+            <span class="text-muted">$360</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Engraving</h6>
+              <small class="text-muted">"All my love"</small>
+            </div>
+            <span class="text-muted">$60</span>
+          </li>
+          </ul>
+          <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Triple Row Diamond Wedding Band with Pave Setting</h6>
+              <small class="text-muted">Size 7</small>
+            </div>
+            <span class="text-muted">$1,735</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Engraving</h6>
+              <small class="text-muted">"Forever and ever"</small>
+            </div>
+            <span class="text-muted">$60</span>
+          </li>
+          </ul>
+          <p class="d-flex justify-content-between">
+            <a class="dummy">Edit Cart</a>
+          </p>
+          <p class="list-group-item d-flex justify-content-between">
+            <span>Subtotal<br>Delivery<br>Estimated Tax<br><br>Total</span>
+            <strong>$16,610<br>FREE<br>$25<br><br>$16.635</strong>
+          </p>
+
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h2 class="mb-3">1. Shipping</h2>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <ul class="list-inline">
+                <li class="list-inline-item"><input type="radio" id="address" name="ship" value="address" checked>
+                  <label for="address">Ship to Adress</label></li>
+                <li class="list-inline-item"><input type="radio" id="instore" name="ship" value="instore">
+                  <label for="instore">In-Store Pickup</label></li>
+                <li class="list-inline-item"><input type="radio" id="local" name="ship" value="local">
+                  <label for="local">Local Fedex Pickup</label></li>
+              </ul>
+            </div>
+            <div class="col-sm-6">
+              <h3>Shipping Address</h3>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="is-gift">
+                <label class="form-check-label" for="is-gift">This is a gift</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+            
+
+            <div class="col-12">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">Country</label>
+              <select class="form-select" id="country" required>
+                <option value="">Choose...</option>
+                <option>United States</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">State</label>
+              <select class="form-select" id="state" required>
+                <option value="">Choose...</option>
+                <option>California</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label" for="same-address">Sign me up for Shane Co emails.</label>
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone">
+              <div class="invalid-feedback">
+                Please enter a valid phone number.
+              </div>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label" for="same-address">Sign me up for order updates by text</label>
+            </div>
+          </div>
+
+          <hr class="my-4">
+          <div class="col-sm-6">
+            <h3>Shipping Method</h3>
+            <input type="radio" id="2day" name="delivery" value="2day" checked>
+            <label for="2day">FedEx 2nd Day</label><br>
+            <p>Estimated Delivery by Friday, Dec 15, 2021</p>
+            <p>FREE</p>
+            <input type="radio" id="overnight" name="delivery" value="overnight">
+            <label for="overnight">FedEx Priority Overnight</label><br> 
+            <p>Estimated Delivery by Thursday, Dec 9, 2021</p>
+            <p>$5.00</p> 
+            <input type="radio" id="5day" name="delivery" value="5day">
+            <label for="5day">US Priority Mail 3-5 Days (PO Box and APO/FPO)</label><br>
+            <p>Estimated Delivery by Friday, Dec 15, 2021</p>
+            <p>$14.00</p>
+          </div>
+
+          <div class="col-sm-6">
+            <input type="radio" id="signature" name="signature" value="signature" checked>
+            <label for="signature">Signature required on delivery</label><br>
+          </div>
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to Payment</button>
+        </form>
+      </div>
+
+      <div class="col-md-7 col-lg-8">
+        <h2 class="mb-3">2. Payment</h2>
+        <h2 class="mb-3">3. Review</h2>
+      </div>
+
+      <!-- <div class="col-sm-6">
+        <p>Order confirmation and updates will be emailed to
+          {email address} <br>
+          Cart #999999
+        </p>
+      </div> -->
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <hr class="my-4">
+    <p class="mb-1">Copyright &copy; 2000-2022 Shane Co. All Rights Reserved.</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a class="dummy">Privacy</a></li>
+      <li class="list-inline-item"><a class="dummy">Terms</a></li>
+      <li class="list-inline-item"><a class="dummy">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+      <script src="../js/form-validation.js"></script>
+  </body>
+
+</html>
