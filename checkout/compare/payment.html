@@ -19,6 +19,11 @@
 <link href="../css/additional.css" rel="stylesheet">
 
 
+
+
+
+
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -39,8 +44,7 @@
     <!-- Custom styles for this template -->
     <link href="../css/form-validation.css" rel="stylesheet">
     <script src="../js/form-validation.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="../js/jquery.creditCardValidator.js"></script>
+
   </head>
   <body class="bg-light">
     
@@ -225,11 +229,10 @@
     
                 <div class="col-md-6">
 
-                  <label>CC number <input></label><p class="log"></p>
+                  
 
-                  <label for="cc-number" class="form-label">Card number</label>
-                  <input type="text" class="form-control" id="cc-number" placeholder="">
-                  <p class="log"></p>
+                  <label for="cardNumber" class="form-label">Card number</label>
+                  <input type="tel" class="form-control" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" id="cardNumber">
                 </div>
     
                 <div class="col-md-3">
@@ -268,16 +271,7 @@
   
   
   
-    <script>
-      $(function() {
-          $('input#cc-number').validateCreditCard(function(result) {
-              $('.log').html('Card type: ' + (result.card_type == null ? '-' : result.card_type.name)
-                       + '<br>Valid: ' + result.valid
-                       + '<br>Length valid: ' + result.length_valid
-                       + '<br>Luhn valid: ' + result.luhn_valid);
-          });
-      });
-  </script>
+   
   <script>
     function getParameterByName(name, url) {
         if (!url) url = window.location.href;
@@ -307,6 +301,25 @@
     document.getElementById("email").innerHTML = email;
     document.getElementById("phone").innerHTML = phone;
     
+    </script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function(){
+          // When data is inputted into the element, trigger a callback function
+          document.getElementById("cardNumber").addEventListener("input", function(){
+            //alert("typing");
+            // Check the value of the element
+            if(cardNumber.value == ""){
+              cardNumber.classList.add("not-visa");
+              cardNumber.classList.remove("is-visa");
+            }else{
+              //alert("is value");
+              //alert(cardNumber.value);
+              cardNumber.classList.add("is-visa");
+              cardNumber.classList.remove("not-visa");
+            }
+          });
+      });
+
     </script>
    </body>
     </html>

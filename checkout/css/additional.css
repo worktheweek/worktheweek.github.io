@@ -232,6 +232,17 @@ div.or span {
     border: 1px solid rgba(0,0,0,.125);
     flex-shrink: 1;
 }
+input#cardNumber.is-visa {
+    background-image:none;
+}
+input#cardNumber.is-visa {
+    background-image:url("../img/visa.png");
+    background-size: 2rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+
   @media (max-width: 600px) {
     ul.payment {
         display: block!important;
