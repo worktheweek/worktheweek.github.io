@@ -65,19 +65,20 @@ p.lead {
     right: 30px;
 }
 .mobile-summary h6 {
-    font-size: 0.75rem;
-    font-weight: 300;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-right: 0.25rem;
 }
 .mobile-summary {
     padding:0.75rem;
     background-color: #fff;
     border: 1px solid rgba(0,0,0,.125);
 }
+.mobile-summary img {
+    flex: 0 0 75px;
+}
 .mobile-summary .accordion-button {
     font-size: 0.9rem!important;
-}
-.mobile-summary h6 {
-    font-size: 0.8rem;
 }
 .mobile-summary .price {
     font-size: 0.8rem;
@@ -276,6 +277,14 @@ input#cardNumber.is-visa {
 }
 .review-mobile {
     display: none;
+}
+.review-mobile ul .ind-item {
+    padding-left: 0.75rem;
+    padding-bottom: 0.25rem;
+}
+.review-mobile ul h6 {
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 @media (max-width: 600px) {
     .review-mobile {
