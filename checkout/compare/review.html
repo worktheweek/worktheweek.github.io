@@ -213,48 +213,84 @@
 
             
               <hr class="my-4">
-              <h2 class="mb-3" id="payment-section">2. Payment</h2>
+              <h2 class="mb-3" id="payment-section">2. Payment <span class="edit-link"><a href="" class="dummy">Edit</a></span></h2>
               <div class="row gy-3">
-                <ul class="list-inline payment d-flex justify-content-between">
-                  <li class="list-inline-item"><input type="radio" id="address" name="ship" value="address" checked>
-                    <label for="address">Credit/Debit Card</label></li>
-                  <li class="list-inline-item"><input type="radio" id="instore" name="ship" value="instore">
-                    <label for="instore">Layaway</label></li>
-                  <li class="list-inline-item"><input type="radio" id="local" name="ship" value="local">
-                    <label for="local">PayPal</label></li>
-                  <li class="list-inline-item"><input type="radio" id="local" name="ship" value="local">
-                    <label for="local">Google Pay</label></li>
-                  <li class="list-inline-item"><input type="radio" id="local" name="ship" value="local">
-                    <label for="local">Apple Pay</label></li>
-                </ul>
-                <h3>Credit or Debit Card <i class="fab fa-cc-visa"></i> <i class="fab fa-cc-mastercard"></i> <i class="fab fa-cc-discover"></i> <i class="fab fa-cc-amex"></i></h3>
+                <p><i class="fab fa-cc-visa"></i> VISA *111</p>
+                
     
-                <div class="col-md-6">
-
-                  
-
-                  <label for="cardNumber" class="form-label">Card number</label>
-                  <input type="tel" class="form-control" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" id="cardNumber">
-                </div>
+                
     
-                <div class="col-md-3">
-                  <label for="cc-expiration" class="form-label">Expiration MM/YY</label>
-                  <input type="tel" class="form-control" inputmode="numeric" id="cc-expiration">
-                </div>
+                
     
-                <div class="col-md-3">
-                  <label for="cc-cvv" class="form-label">CVV</label>
-                  <input type="tel" class="form-control" inputmode="numeric" id="cc-cvv">
-                </div>
+               
               </div>
-              <button class="w-100 btn btn-primary btn-lg" type="submit" value="submit" onclick="showDetails()";>Continue to Review</button>
-             
+              
     
 
               <hr class="my-4">
               <h2 class="mb-3">3. Review</h2>
-              <hr class="my-4">
-            
+                <div class="review-desktop">
+                  <p>Please review your order information before placing your order.</p>
+                </div>
+                <div class="review-mobile">
+                  <p>Estimated delivery Friday, December 15, 2021</p>
+                  <ul class="list-group mb-3">
+                    <li class="d-flex justify-content-between lh-sm">
+                        <img src="../img/ring.jpg" alt="Engagement ring" width="80px" height="60px" />
+                        <div>
+                          <div class="d-flex justify-content-between ind-item">
+                            <h6 class="my-0">Adagio Diamond Engagement Ring in 14k White Gold<br><small class="text-muted">Size 7</small></h6>
+                            <span class="price">$2,050</span>
+                          </div>
+                          <div class="d-flex justify-content-between ind-item">
+                            <h6 class="my-0">Cushion Cut Diamond<br><small class="text-muted">1 ctw.</small></h6>
+                            <span class="price">$4,495</span>
+                          </div>
+                          <div class="d-flex justify-content-between ind-item">
+                            <h6 class="my-0">Classic Diamond Halo Decorative Crown</h6>
+                            <span class="price">$360</span>
+                          </div>
+                          <div class="d-flex justify-content-between ind-item">
+                            <h6 class="my-0">Engraving<br><small class="text-muted">"All my love""</small></h6>
+                            <span class="price">$60</span>
+                          </div>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between lh-sm">
+                      <img src="../img/band.jpg" alt="Wedding band" width="80px" height="60px" />
+                      <div>
+                        <div class="d-flex justify-content-between ind-item">
+                          <h6 class="my-0">Triple Row Diamond Wedding Band with Pave Setting<br><small class="text-muted">Size 7</small></h6>
+                          <span class="price">$1,735</span>
+                        </div>
+                      </div>
+                  </li>
+                  </ul>
+                  <hr class="my-4">
+                      <p class="d-flex justify-content-between price-list">
+                        <span>Subtotal</span>
+                        <span>$8,700</span>
+                      </p>
+                      <p class="d-flex justify-content-between price-list">
+                        <span>Delivery</span>
+                        <span>FREE</span>
+                      </p>
+                      <p class="d-flex justify-content-between price-list">
+                        <span>Estimated Tax</span>
+                        <span>$25</span>
+                      </p>
+                      <p class="d-flex justify-content-between price-list">
+                        <span>Total</span>
+                        <span>$8,725</span>
+                      </p>
+                </div>
+
+
+
+
+
+
+                <button class="w-100 btn btn-primary btn-lg" type="submit" value="submit" onclick="showDetails()";>Place Order</button>
           </div>
         </div>
       </main>
@@ -274,65 +310,47 @@
   
   
    
-  <script>
-    function getParameterByName(name, url) {
-        if (!url) url = window.location.href;
-        name = name.replace(/[\[\]]/g, '\\$&');
-        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-            results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    <script>
+      function getParameterByName(name, url) {
+          if (!url) url = window.location.href;
+          name = name.replace(/[\[\]]/g, '\\$&');
+          var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+              results = regex.exec(url);
+          if (!results) return null;
+          if (!results[2]) return '';
+          return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
+      
+      var fn = getParameterByName('firstName');
+      var ln = getParameterByName('lastName');
+      var address = getParameterByName('address');
+      var city = getParameterByName('city');
+      var state = getParameterByName('state');
+      var zip = getParameterByName('zip');
+      var email = getParameterByName('email');
+      var phone = getParameterByName('phone');
+    
+      document.getElementById("firstName").innerHTML = fn;
+      document.getElementById("lastName").innerHTML = ln;
+      document.getElementById("address").innerHTML = address;
+      document.getElementById("city").innerHTML = city;
+      document.getElementById("state").innerHTML = state;
+      document.getElementById("zip").innerHTML = zip;
+      document.getElementById("email").innerHTML = email;
+      document.getElementById("phone").innerHTML = phone;
+      
+      </script>
+  <script type="text/javascript">
+    function showDetails()
+    {
+       var currenturl = window.location.href;
+       //alert(currenturl);
+       let result = currenturl.replace("review","confirmation");
+       //alert(result);
+       window.location.href = result;
     }
-    
-    var fn = getParameterByName('firstName');
-    var ln = getParameterByName('lastName');
-    var address = getParameterByName('address');
-    var city = getParameterByName('city');
-    var state = getParameterByName('state');
-    var zip = getParameterByName('zip');
-    var email = getParameterByName('email');
-    var phone = getParameterByName('phone');
+    </script>
   
-    document.getElementById("firstName").innerHTML = fn;
-    document.getElementById("lastName").innerHTML = ln;
-    document.getElementById("address").innerHTML = address;
-    document.getElementById("city").innerHTML = city;
-    document.getElementById("state").innerHTML = state;
-    document.getElementById("zip").innerHTML = zip;
-    document.getElementById("email").innerHTML = email;
-    document.getElementById("phone").innerHTML = phone;
-    
-    </script>
-    <script type="text/javascript">
-      document.addEventListener("DOMContentLoaded", function(){
-          // When data is inputted into the element, trigger a callback function
-          document.getElementById("cardNumber").addEventListener("input", function(){
-            //alert("typing");
-            // Check the value of the element
-            if(cardNumber.value == ""){
-              cardNumber.classList.add("not-visa");
-              cardNumber.classList.remove("is-visa");
-            }else{
-              //alert("is value");
-              //alert(cardNumber.value);
-              cardNumber.classList.add("is-visa");
-              cardNumber.classList.remove("not-visa");
-            }
-          });
-      });
-
-    </script>
-<script type="text/javascript">
-  function showDetails()
-  {
-     var currenturl = window.location.href;
-     //alert(currenturl);
-     let result = currenturl.replace("payment", "review");
-     //alert(result);
-     window.location.href = result;
-  }
-  </script>
-
-   </body>
-    </html>
+     </body>
+      </html>
+  

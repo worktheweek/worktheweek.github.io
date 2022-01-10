@@ -31,6 +31,9 @@ ul.shipping {
     background-color: #fff;
     border: 1px solid rgba(0,0,0,.125);
 }
+ul.shipping li .muted-text {
+    font-size: 0.75rem;
+}
 ul.ship-method li {
     padding-bottom: 0.5rem;
 }
@@ -196,6 +199,15 @@ div.or span {
         font-size: 1.3rem;
     }
 }
+@media (min-width: 600px) {
+    ul.shipping li .muted-text {
+        display: block;
+    }
+    ul.shipping li input {
+        vertical-align: top;
+        margin-top: 5px;
+    }
+}
 
 @media (max-width: 600px) {
     ul.shipping {
@@ -208,6 +220,7 @@ div.or span {
     ul.shipping li:last-child {
         margin-bottom: 0;
       }
+   
     div.py-5.text-center {
         padding: 1rem 0 2rem 0!important;
     }
@@ -256,3 +269,122 @@ input#cardNumber.is-visa {
         margin-bottom: 0;
       }
   }
+
+/* review */
+.review-desktop {
+    display: block;
+}
+.review-mobile {
+    display: none;
+}
+@media (max-width: 600px) {
+    .review-mobile {
+        display: block;
+    }
+    .review-desktop {
+        display: none;
+    }
+  }
+
+/* confirmation */
+.intro h2 span {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+.intro h3 {
+    font-size: 1.3rem;
+}
+.create-account {
+    background-color: #E5E9E9;
+    padding:1.5rem 0.25rem;
+    margin:0;
+    display: block;
+    width: 100%;
+}
+.create-account h4 {
+    margin: 0;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 0 3rem;
+}
+.create-account ul {
+    margin: 1rem 0 0 4rem;
+    width: auto;
+}
+.create-account form {
+    margin-top: 1.25rem;
+}
+.create-account form .muted-text {
+    font-size: 0.75rem;
+}
+.create-account form button {
+    margin: 1rem 0 0 0;
+    font-size: 0.95rem;
+    background-color: grey;
+    border-color: grey;
+}
+.order-details {
+    padding-bottom: 0rem!important;
+}
+.order-details h6 {
+    font-size: 0.75rem;
+}
+.order-details .price {
+    font-size: 0.75rem;
+}
+.order-details .ind-item {
+    padding-bottom: 0.25rem;
+}
+.order-details hr {
+    margin: 1rem 0!important;
+}
+.order-details .price-list {
+    margin-bottom: 0.25rem;
+}
+.order-details .grouping {
+    padding-left: 0.25rem;
+}
+.contact-delivery {
+    padding-top: 0rem!important;
+}
+.contact-delivery p {
+    margin-bottom: 0.25rem;
+}
+.experience {
+    background-color: #E5E9E9;
+    padding: 1.5rem 0.25rem;
+    margin:0;
+    display: block;
+    width: 100%;
+}
+.experience h4 {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 3rem;
+}
+.experience h6 {
+    font-size: 0.75rem;
+}
+.experience ul {
+    margin: 1.5rem 2rem 1rem 2rem;
+    width: auto;
+}
+.experience ul .ind-item {
+    padding-left: 0.25rem;
+}
+.experience ul p.title {
+    font-size: 0.75rem;
+}
+.experience form {
+    margin-top: 1.25rem;
+}
+.experience form .muted-text {
+    font-size: 0.75rem;
+}
+.experience form button {
+    margin: 1rem 0 0 0;
+    font-size: 0.95rem;
+    background-color: grey;
+    border-color: grey;
+}
