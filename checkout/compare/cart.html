@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Shane Co - Shopping Cart</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/checkout/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e7a983d857.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/additional.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="../css/form-validation.css" rel="stylesheet">
+    <script src="../js/form-validation.js"></script>
+  </head>
+  <body class="bg-light">
+    
+    <div class="container">
+      <main>
+        <div class="review-mobile">
+          <div class="mobile-header d-flex justify-content-between">
+            <p class="nav-icon"><i class="fas fa-bars"></i></p>
+            <p class="nav-logo"><img src="../img/logo.png" alt="Shane Co Checkout" width="120px" /></p>
+            <p class="search"><i class="fas fa-search"></i></p>
+            <p class="camera"><i class="fas fa-camera"></i></p>
+            <p class="location"><i class="fas fa-map-marker-alt"></i></p>
+            <p class="heart"><i class="far fa-heart"></i></p>
+            <p class="shopping-cart"><i class="fas fa-shopping-cart"></i></p>
+          </div>
+        </div>
+        <div class="py-5 text-center review-desktop">
+          <h1><img src="../img/logo.png" alt="Shane Co Checkout" width="120px" /></h1>
+          <p class="lead">Desktop header<br>
+          <a class="dummy">Login</a> or <a class="dummy">Create an account</a></p>
+        </div>
+
+    
+        <div class="row g-5">
+          <div class="col-md-5 col-lg-4 order-md-last review-desktop">
+
+
+
+
+          <div class="">
+            <h4 class="mb-3">
+              <span class="">Order Summary</span>
+            </h4>
+
+              <p class="d-flex justify-content-between price-list">
+                <span>Subtotal</span>
+                <span>$8,700</span>
+              </p>
+              <p class="d-flex justify-content-between price-list">
+                <span>Delivery</span>
+                <span>FREE</span>
+              </p>
+              <p class="d-flex justify-content-between price-list">
+                <span>Estimated Tax</span>
+                <span>$25</span>
+              </p>
+              <p class="d-flex justify-content-between price-list">
+                <span>Total</span>
+                <span>$8,725</span>
+              </p>
+
+              <div class="express">
+                <h6>Express Checkout</h6>
+                <img src="../img/express-pay.png" alt="express pay" />
+              </div>
+              <div class="or"><span> OR </span></div>
+              <a class="w-100 btn btn-primary btn-lg" role="button" href="shipping.html">Checkout</a>
+          </div>
+
+
+
+
+
+          </div>
+
+
+
+          <div class="col-md-7 col-lg-8">
+
+            <div class="">
+              <h4 class="mb-3 title">
+                <span class="">Shopping Cart</span>
+              </h4>
+              <p class="total-price">$8,725</p>
+              <div class="py-5 text-center" id="login-prompt">
+                <p class="lead">For a faster checkout,<br>
+                <a class="dummy">Login</a> or <a class="dummy">Create an account</a></p>
+              </div>
+              
+              <div class="list-group mb-3 cart-product-list">
+                <div class="lh-sm">
+                    <img src="../img/ring.jpg" alt="Engagement ring" width="80px" height="60px" />
+                    <div>
+                      <div class="d-flex justify-content-between ind-item">
+                        <h6 class="my-0">Adagio Diamond Engagement Ring in 14k White Gold<br><small class="text-muted">Size 7</small></h6>
+                        <span class="price">$2,050</span>
+                      </div>
+                      <div class="d-flex justify-content-between ind-item">
+                        <h6 class="my-0">Cushion Cut Diamond<br><small class="text-muted">1 ctw.</small></h6>
+                        <span class="price">$4,495</span>
+                      </div>
+                      <div class="d-flex justify-content-between ind-item">
+                        <h6 class="my-0">Classic Diamond Halo Decorative Crown</h6>
+                        <span class="price">$360</span>
+                      </div>
+                      <div class="d-flex justify-content-between ind-item">
+                        <h6 class="my-0">Engraving<br><small class="text-muted">"All my love""</small></h6>
+                        <span class="price">$60</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+                <p><i class="fas fa-truck"></i> Estimated delivery Thurs, Jan 20, 2022</p>
+                <div class="d-flex justify-content-between three-actions">
+                  <p><i class="far fa-heart"></i> <a href="#" class="dummy">Favorite</a></p>
+                  <p><i class="far fa-bookmark"></i> <a href="#" class="dummy">Save for Later</a></p>
+                  <p><i class="far fa-trash-alt"></i> <a href="#" class="dummy">Remove</a></p>
+                </div>
+
+                <div class="list-group mb-3 cart-product-list">
+                  <div class="lh-sm">
+                    <img src="../img/band.jpg" alt="Wedding band" width="80px" height="60px" />
+                    <div>
+                      <div class="d-flex justify-content-between ind-item">
+                        <h6 class="my-0">Triple Row Diamond Wedding Band with Pave Setting<br><small class="text-muted">Size 7</small></h6>
+                        <span class="price">$1,735</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p><i class="fas fa-truck"></i> Estimated delivery Thurs, Jan 20, 2022</p>
+                <div class="d-flex justify-content-between three-actions">
+                  <p><i class="far fa-heart"></i> <a href="#" class="dummy">Favorite</a></p>
+                  <p><i class="far fa-bookmark"></i> <a href="#" class="dummy">Save for Later</a></p>
+                  <p><i class="far fa-trash-alt"></i> <a href="#" class="dummy">Remove</a></p>
+                </div>
+              
+              <div class="review-mobile cart-summary">
+                
+                <h4 class="mb-3"><br>
+                  <span class="">Order Summary</span>
+                </h4>
+    
+                  <p class="d-flex justify-content-between price-list">
+                    <span>Subtotal</span>
+                    <span>$8,700</span>
+                  </p>
+                  <p class="d-flex justify-content-between price-list">
+                    <span>Delivery</span>
+                    <span>FREE</span>
+                  </p>
+                  <p class="d-flex justify-content-between price-list">
+                    <span>Estimated Tax</span>
+                    <span>$25</span>
+                  </p>
+                  <p class="d-flex justify-content-between price-list">
+                    <span>Total</span>
+                    <span>$8,725</span>
+                  </p>
+    
+                  
+                  
+                  <a class="w-100 btn btn-primary btn-lg" role="button" href="shipping.html">Checkout</a>
+                  <div class="or"><span> OR </span></div>
+                  <div class="express">
+                    <h6>Express Checkout</h6>
+                    <img src="../img/express-pay.png" alt="express pay" />
+                  </div>
+              </div>
+             
+      
+            </div>
+
+
+
+
+
+            
+            <hr class="my-4">
+            <h2 class="mb-3">Complete the Look</h2>
+            <div class="d-flex justify-content-between product-list">
+              <div>
+                <img src="../img/earrings.jpg" alt="product">
+                <p>0.5 ctw. Round Diamond Stud Earrings in White Gold<br>$1,870</p>
+              </div>
+              <div>
+                <img src="../img/locket.jpg" alt="product">
+                <p>Diamond Starburst Oval Locket in Sterling Silver (30 in)<br>$270</p>
+              </div>
+            </div>
+            
+            
+
+            <hr class="my-4">
+              <h2 class="mb-3">Saved for Later (2)</h2>
+              <p>To view your Saved items on different devices, <a href="#" class="dummy">login</a> or <a href="#" class="dummy">create an account</a></p>
+              <div class="d-flex justify-content-between product-list">
+                <div>
+                  <img src="../img/saved1.jpg" alt="product">
+                  <p>Vintage Diamond Engagement Ring in Platinum<br><em>Center stone sold separately</em><br>$1,545</p>
+                </div>
+                <div>
+                  <img src="../img/saved2.jpg" alt="product">
+                  <p>Marquise and Round Diamond Engagement Ring<br><em>Center stone sold separately</em><br>$2,085</p>
+                </div>
+              </div>
+              <hr class="my-4">
+              <div class="financing">
+                <img src="../img/financing.png" alt="financing">
+                <h3 class="headline">New Offer<br>18 Months Special Financing</h3>
+                <p class="description">For a limited time only. Don't put your love on hold - apply today for the Shane Co credit card.</p>
+
+
+              </div>
+              <hr class="my-4">
+         
+          </div>
+        </div>
+      </main>
+    
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">Copyright &copy; 2000-2022 Shane Co. All Rights Reserved.</p>
+      </footer>
+    </div>
+    
+    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/form-validation.js"></script>
+      </body>
+    </html>
+    

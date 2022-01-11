@@ -4,6 +4,9 @@
 body {
     font-size: 0.9rem!important;
 }
+.container {
+    overflow: hidden;
+}
 h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
@@ -396,4 +399,78 @@ input#cardNumber.is-visa {
     font-size: 0.95rem;
     background-color: grey;
     border-color: grey;
+}
+/* cart */
+.mobile-header {
+    border-bottom: 1px solid #212529;
+    font-size: 1.5rem;
+    padding: 1.5rem 0 0.25rem 0!important;
+    margin: 0 0 2rem 0;
+}
+
+.mobile-header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.mobile-header .nav-logo {
+    margin-top: -0.4rem;
+}
+.product-list img {
+    max-width: 185px;
+    height: auto;
+}
+.product-list p {
+    text-align: center;
+    font-size: 0.75rem;
+}
+.financing {
+    text-align: center;
+}
+.financing img {
+    max-width: 300px;
+    height: auto;
+}
+h4.title {
+    text-align: center;
+    margin-bottom: 0.25rem!important;
+}
+.total-price {
+    text-align: center;
+}
+#login-prompt {
+    background-color: #E5E9E9;
+    padding: 1rem 0 1rem 0!important;
+}
+#login-prompt p.lead {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+.cart-product-list {
+    padding-top: 1rem;
+}
+.cart-product-list img {
+    max-width: 300px;
+    height: auto;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.three-actions {
+    border-bottom: 1px solid #212529;
+}
+.cart-product-list h6 {
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+.cart-product-list .ind-item {
+    padding-bottom: 0.25rem;
+}
+.cart-summary p {
+    padding-bottom: 0.25rem;
+    margin: 0;
+}
+.cart-summary a {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
