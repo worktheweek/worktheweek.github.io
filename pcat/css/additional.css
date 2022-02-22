@@ -1,0 +1,150 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    font-size: 0.9rem!important;
+    background-color: #FEFFFE;
+}
+.container {
+    overflow: hidden;
+    padding: 0.5rem;
+}
+.navbar {
+    display: block;
+    padding: 1rem 0.5rem;
+    background-color: #FEFFFE;
+}
+.review-mobile {
+    border-bottom: 1px solid darkgrey;
+    padding-bottom: 0.5rem;
+}
+.review-desktop {
+    display: none;
+}
+.mobile-header {
+    font-size: 1.3rem;
+}
+.mobile-header p {
+    margin: 0;
+}
+.mobile-header-two p {
+    display: inline-block;
+}
+.mobile-header-two p.search-box {
+    float:left;
+    width:calc(100% - 60px);
+}
+.mobile-header-two p.icons {
+    float:right;
+
+}
+
+
+.mobile-header-two::after {
+    clear: both;
+    content: '';
+    display: table;
+}
+.mobile-header-two p.search-box input {
+    width:100%;
+    font-size: 0.75rem;
+}
+
+.header {
+    margin-top: 2rem;
+}
+.breadcrumbs {
+    font-size: 0.7rem;
+}
+.step-ui img {
+    width: 100%;
+    max-width:400px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;;
+}
+h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+.promoted-filters {
+    border: 1px solid darkgrey;
+    padding: 0.5rem;
+}
+h2 {
+    font-size: 0.95rem;
+    text-align: center;
+}
+.styles .scroller {
+    overflow: scroll;
+}
+.styles .scroller img {
+    height: 85px;
+    width: auto;
+}
+.metal img {
+    width: 100%;
+    max-width:300px;
+    display: block;
+    margin: 0 auto;
+}
+.price img {
+    width: 100%;
+    max-width:300px;
+    display: block;
+    margin: 0 auto;
+}
+.filter-sort {
+    background-color: darkgrey;
+    padding: 0.5rem;
+}
+.filter-sort button {
+    background-color: white;
+    border: 1px solid white;
+    width: 48%;
+
+}
+.filter-sort select {
+    background-color: white;
+    border: 1px solid white;
+    width: 48%;
+    float: right;
+    height: 26px;
+
+}
+.filter-sort::after {
+    clear: both;
+    content: '';
+    display: table;
+}
+.product-number {
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+.product-grid img {
+    max-width: 48%;
+    width:48%;
+}
+
+@media (min-width: 1200px) {
+   
+}
+@media (min-width: 600px) {
+    .review-desktop {
+        display: block;
+    }
+    .review-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+   .review-desktop {
+       display: none;
+   }
+   .review-mobile {
+        display: block;
+    }   
+  }
