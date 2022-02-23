@@ -9,14 +9,23 @@ body {
     overflow: hidden;
     padding: 0.5rem;
 }
+.banner {
+    background-color: #888888;
+    color: white;
+    text-align: center;
+}
+.banner p {
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+}
 .navbar {
     display: block;
-    padding: 1rem 0.5rem;
+    padding: 0;
     background-color: #FEFFFE;
 }
 .review-mobile {
     border-bottom: 1px solid darkgrey;
-    padding-bottom: 0.5rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
 }
 .review-desktop {
     display: none;
