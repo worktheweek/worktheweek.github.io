@@ -13,6 +13,7 @@ body {
     background-color: #888888;
     color: white;
     text-align: center;
+    padding: 0.2rem 0 0.1rem 0;
 }
 .banner p {
     font-size: 0.75rem;
@@ -67,6 +68,7 @@ body {
 }
 .breadcrumbs p {
     margin-bottom: 0.25rem;
+    padding-top: 0.75rem;
 }
 
 .step-ui img {
@@ -84,6 +86,7 @@ h1 {
 .promoted-filters {
     border: 1px solid darkgrey;
     padding: 0.5rem 0.5rem 0rem 0.5rem;
+    margin-top: 0.5rem;
 }
 h2 {
     font-size: 0.7rem;
@@ -91,17 +94,19 @@ h2 {
 }
 .styles h2 {
     margin-bottom: 0;
+    margin-top: 0.25rem;
 }
 .styles .scroller {
     overflow: scroll;
     margin-bottom: 0.3rem;
 }
 .styles .scroller img {
-    height: 85px;
+    height: 95px;
     width: auto;
 }
 .metal h2 {
     margin-bottom: 0;
+    margin-top: 0.25rem;
 }
 .metal img {
     width: 100%;
@@ -112,6 +117,7 @@ h2 {
 .price h2 {
     margin-bottom: 0;
     padding-top: 0.5rem;
+    margin-top: 0.25rem;
 }
 .price img {
     width: 100%;
@@ -129,6 +135,9 @@ h2 {
     width: 48%;
     box-shadow: 2px 3px #888888;
     transition: 0.3s;
+    font-size: 0.9rem!important;
+    padding: 0.4rem!important;
+    border-radius: 0;
 }
 .filter-sort button:hover {
     box-shadow: 4px 5px #888888;
@@ -138,7 +147,7 @@ h2 {
     border: 1px solid white;
     width: 48%;
     float: right;
-    height: 26px;
+    height: 27px;
 
 }
 .filter-sort::after {
@@ -157,6 +166,53 @@ h2 {
 .product-grid img {
     max-width: 48%;
     width:48%;
+}
+
+.offcanvas-collapse {
+    top: 0 !important;
+    z-index: 1040;
+    background-color:lightgray !important;
+}
+.offcanvas-collapse h2 {
+    font-size: 1rem;
+    clear: both;
+    padding: 1rem 0;
+}
+.offcanvas-collapse button.close-me  {
+    float: right;
+    font-size: 1.5rem!important;
+    background-color: transparent;
+    border: 0!important;
+    box-shadow: none;
+    padding: 1rem 0 0 0!important;
+    color:black;
+    width: auto;
+}
+.offcanvas-collapse button.close-me i {
+    color: black;
+}
+.offcanvas-collapse ul {
+    list-style-type:none;
+}
+.offcanvas-collapse ul li {
+    border-bottom: 1px solid #6f6f6f;
+    padding:0.75rem 0;
+}
+.offcanvas-collapse ul li i {
+    float: right;
+}
+.offcanvas-collapse ul li:first-of-type {
+    border-top: 1px solid #6f6f6f;
+}
+.offcanvas-collapse button.apply {
+    margin: 0 auto;
+    display: block;
+}
+.offcanvas-collapse a.dummy {
+    margin: 0 auto;
+    display: block;
+    padding-top: 0.75rem;
+    text-align: center;
 }
 
 @media (min-width: 1200px) {

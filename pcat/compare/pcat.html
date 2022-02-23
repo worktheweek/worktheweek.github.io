@@ -18,6 +18,7 @@
 <link href="../css/bootstrap.min.css" rel="stylesheet">
 <link href="../css/additional.css" rel="stylesheet">
 <link href="../css/navbar-top-fixed.css" rel="stylesheet">
+<link href="../css/offcanvas.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -81,7 +82,7 @@
           <div class="step-ui">
             <img src="../img/step-ui.png" alt="Step UI"/>
           </div>
-        <h1>Design Your Own Engagement Ring</h1>
+        <!-- <h1>Design Your Own Engagement Ring</h1> -->
         <div class="promoted-filters">
           <div class="styles">
             <h2>Style</h2>
@@ -98,7 +99,9 @@
         </div>
       </div>
       <div class="filter-sort">
-        <button type="button">All Filters</button>
+        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+          All Filters
+        </button>
         <select name="sort" id="sort">
           <option value="featured">Featured</option>
           <option value="featured">Bestselling</option>
@@ -107,6 +110,30 @@
           <option value="featured">Price: Low to High</option>
           <option value="featured">Price: High to Low</option>
         </select>
+
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+          <button class="close-me navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse2" aria-label="Toggle navigation">
+            <i class="fa fa-times"></i>
+          </button>
+          <h2>All Filters</h2>
+          <ul>
+            <li>Style<i class="fas fa-angle-down"></i></li>
+            <li>Metal Type<i class="fas fa-angle-down"></i></li>
+            <li>Price<i class="fas fa-angle-down"></i></li>
+            <li>Center Stone Shape<i class="fas fa-angle-down"></i></li>
+            <li>Band Width<i class="fas fa-angle-down"></i></li>
+            <li>Side Gemstones<i class="fas fa-angle-down"></i></li>
+            <li>Side Gemstone Shape<i class="fas fa-angle-down"></i></li>
+            <li>Side Gemstone Color<i class="fas fa-angle-down"></i></li>
+            <li>Halo Shape<i class="fas fa-angle-down"></i></li>
+            <li>Engravability<i class="fas fa-angle-down"></i></li>
+            <li>Availability<i class="fas fa-angle-down"></i></li>
+          </ul>
+          <button class="apply" id="navbarSideCollapse3">Apply</button>
+          <a href="#" class="dummy">Clear All</a>
+        </div>
+
+
 
       </div>
       <div class="product-number">
@@ -135,6 +162,7 @@
     
     
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/offcanvas.js"></script>
     
       </body>
     </html>
