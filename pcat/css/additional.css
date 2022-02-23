@@ -54,8 +54,12 @@ body {
     margin-top: 2rem;
 }
 .breadcrumbs {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
+.breadcrumbs p {
+    margin-bottom: 0.25rem;
+}
+
 .step-ui img {
     width: 100%;
     max-width:400px;
@@ -64,30 +68,41 @@ body {
     display: block;;
 }
 h1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
-    margin: 0.5rem 0;
+    margin: 0.75rem 0 0.5rem 0;
 }
 .promoted-filters {
     border: 1px solid darkgrey;
-    padding: 0.5rem;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
 }
 h2 {
-    font-size: 0.95rem;
+    font-size: 0.7rem;
     text-align: center;
+}
+.styles h2 {
+    margin-bottom: 0;
 }
 .styles .scroller {
     overflow: scroll;
+    margin-bottom: 0.3rem;
 }
 .styles .scroller img {
     height: 85px;
     width: auto;
 }
+.metal h2 {
+    margin-bottom: 0;
+}
 .metal img {
     width: 100%;
-    max-width:300px;
+    max-width:275px;
     display: block;
     margin: 0 auto;
+}
+.price h2 {
+    margin-bottom: 0;
+    padding-top: 0.5rem;
 }
 .price img {
     width: 100%;
@@ -103,7 +118,11 @@ h2 {
     background-color: white;
     border: 1px solid white;
     width: 48%;
-
+    box-shadow: 2px 3px #888888;
+    transition: 0.3s;
+}
+.filter-sort button:hover {
+    box-shadow: 4px 5px #888888;
 }
 .filter-sort select {
     background-color: white;
@@ -122,6 +141,9 @@ h2 {
     font-size: 0.8rem;
     text-align: center;
     padding-top: 0.5rem;
+}
+.product-number p {
+    margin-bottom: 0;
 }
 .product-grid img {
     max-width: 48%;
