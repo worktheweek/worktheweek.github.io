@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Favorites - Shane Co</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="../css/additional.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e7a983d857.js" crossorigin="anonymous"></script>
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="../css/dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="mobile">
+  <img src="../img/mobile-header.jpg" alt="header" />
+</header>
+<header class="desktop navbar navbar-dark sticky-top flex-md-nowrap p-0">
+  <img src="../img/desktop-header.jpg" alt="header" />
+</header>
+
+
+    <main class="guest-favorites">
+      
+
+
+      <div class="container-fluid">
+        <h1>Guest Favorites</h1>
+        <p class="number">6 items</p>
+        <div class="login">
+          <p>To save, share, or view your Favorites on another device, either <a href="#" class="dummy">Log In</a> or <a href="#" class="dummy">Sign Up</a>.</p>
+        </div>
+        <div class="all-content desktop-d-flex">
+          <div class="favorite-product">
+            <img src="../img/fav-prod-1.jpeg" alt="product" /><i class="fa-solid fa-heart"></i>
+            <h2>Diamond Tennis Bracelet in 14k White Gold (7 in)</h2>
+            <p class="price">$2,250</p>
+            <button>Add to Bag</button>
+          </div>
+          <div class="favorite-product">
+            <img src="../img/fav-prod-6.jpeg" alt="product" /><i class="fa-solid fa-heart"></i>
+            <h2>Bold Pearl Double Wrap Bracelet</h2>
+            <p class="price">$135</p>
+            <button>Add to Bag</button>
+          </div>
+          <div class="favorite-product">
+            <img src="../img/fav-prod-3.jpeg" alt="product" /><i class="fa-solid fa-heart"></i>
+            <h2>Pavé Diamond Round Studs</h2>
+            <p class="price">$325</p>
+            <button>Add to Bag</button>
+          </div>
+        </div>
+        <div class="all-content desktop-d-flex">
+          <div class="favorite-product">
+            <img src="../img/fav-prod-5.jpeg" alt="product" /><i class="fa-solid fa-heart"></i>
+            <h2>Beaded Huggie Hoops</h2>
+            <p class="price">$150</p>
+            <button>Add to Bag</button>
+          </div>
+          <div class="favorite-product">
+            <img src="../img/fav-prod-4.jpeg" alt="product" /><i class="fa-solid fa-heart"></i>
+            <h2>Stacker Ring</h2>
+            <p class="price">$75</p>
+            <button>Add to Bag</button>
+          </div>
+          <div class="favorite-product">
+            <img src="../img/fav-prod-2.jpeg" alt="product" /><i class="fa-solid fa-heart"></i>
+            <h2>Essential Pearl Necklace</h2>
+            <p class="price">$395</p>
+            <button>Add to Bag</button>
+          </div>
+        </div>
+        <div class="search">
+          <h2>Search Public Favorites</h2>
+          <p>Search by email address to find a friend's favorite list.</p>
+          <div class="form">
+            <label>Email</label>
+            <input type="text">
+          </div>
+          <button>Search</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mobile">
+      <img src="../img/mobile-footer.png" alt="footer" />
+    </footer>
+    <footer class="desktop">
+      <img src="../img/footer.png" alt="footer" />
+    </footer>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+
+     
+  </body>
+</html>
