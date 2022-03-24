@@ -102,6 +102,11 @@ nav {
   .dropdown-content li a {
     color: black;
     text-decoration: none;
+    position: relative;
+    font-size: 0.9rem!important;
+    top: 0;
+    right: 0;
+    text-decoration: none;
   }
   
   .dropdown a:hover {background-color: #ddd;}
