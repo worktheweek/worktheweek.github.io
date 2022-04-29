@@ -1,0 +1,37 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding:0;
+    margin:0;
+}
+body {
+    font-size: 0.9rem!important;
+    background-color: white
+}
+main {
+    display: block;
+    height: 100vh;
+}
+h1 {
+    color: rgba(22, 25, 50, .90);
+    font-weight: 400;
+}
+.one {
+    height:30vh;
+    background-color:rgba(22, 25, 50, .20);
+}
+.two {
+    height:30vh;
+    background-color:rgba(22, 25, 50, .40);
+}
+.three {
+    height:20vh;
+    background-color:rgba(22, 25, 50, .60);
+}
+.four {
+    height:10vh;
+    background-color:rgba(22, 25, 50, .80);
+}
+.five {
+    height:10vh;
+    background-color:rgba(22, 25, 50, .90);
+}
