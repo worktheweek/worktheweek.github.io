@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Account Dashboard - Shane Co</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="../css/additional.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e7a983d857.js" crossorigin="anonymous"></script>
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="../css/dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="mobile">
+  <img src="../img/mobile-header.jpg" alt="header" />
+</header>
+<header class="desktop navbar navbar-dark sticky-top flex-md-nowrap p-0">
+  <img src="../img/desktop-header.jpg" alt="header" />
+</header>
+
+
+    <main class="">
+      <nav class="mobile">
+        <button onclick="myFunction()" class="dropbtn">Account Dashboard <i class="fas fa-angle-down"></i></button>
+        <ul id="myDropdown" class="dropdown-content">
+            <li><a href="account.html">Account Dashboard</a></li>
+            <li>Order History</li>
+            <li>Account Info & Security</li>
+            <li>Payment Methods</li>
+            <li>Addresses</li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li>Product Reviews</li>
+            <li>Appointments</li>
+            <li>Jewelry Preferences</li>
+            <li>Shop Jobs</li>
+            <li>Communications</li>
+            <li>Recently Viewed</li>
+            <li>Quizzes</li>
+            <li>Sign Out</li>
+          </ul>
+      </nav>
+
+    <div class="container-fluid">
+      <div class="all-content d-flex">
+        <nav class="desktop">
+          <div class="sticky">
+            <div class="intro">
+              <h2>Hello Jennifer!</h2>
+              <p>Welcome to your account details.</p>
+            </div>
+            <ul class="">
+              <li class="active">
+                <a class="dummy" href="#">
+                  Account Dashboard
+                </a>
+              </li>
+              <li class="">
+                <a class="dummy" href="#">
+                  Order History
+                </a>
+              </li>
+              <li class="">
+                <a class="dummy" href="#">
+                  Account Info & Security
+                </a>
+              </li>
+              <li class="">
+                <a class="dummy" href="#">
+                  Payment Methods
+                </a>
+              </li>
+              <li class="">
+                <a class="dummy" href="#">
+                  Addresses
+                </a>
+              </li>
+              <li class="">
+                <a class="dummy" href="favorites.html">
+                  Favorites
+                </a>
+              </li>
+              <li class="">
+                <a class="dummy" href="#">
+                  Product Reviews
+                </a>
+              </li>
+              <li class="">
+                <a class="dummy" href="#">
+                  Appointments
+                </a>
+              </li>
+              <li class="">
+                <a class="dummy" href="#">
+                  Jewelry Preferences
+                </a>
+              </li>
+              <li class="">
+                <a class="dummy" href="#">
+                  Shop Jobs
+                </a>
+              </li>
+              <li class="">
+                <a class="dummy" href="#">
+                  Communications
+                </a>
+              </li>
+              <li class="">
+                <a class="dummy" href="#">
+                  Recently Viewed
+                </a>
+              </li>
+              <li class="">
+                <a class="dummy" href="#">
+                  Quizzes
+                </a>
+              </li>
+              <li>
+                <button>Sign Out</button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="page-content">
+
+          <div class="">
+            <h1>Account Dashboard</h1>
+          </div>
+    
+          
+    
+          <div class="double-block desktop-d-flex">
+            <div class="block purchases">
+              <h2>Recent Purchase</h2>
+              <div class="desktop-d-flex desktop-flex-center">
+                <img src="../img/pave-earrings.png" alt="product" />
+                <p><strong>On Its Way!</strong><br>
+                  Order <a href="#" class="dummy">#0174509864</a><br>
+                  Order Date: March 20<br>
+                  Delivery Date: March 26<br>
+                  Tracking: <a href="#" class="dummy">#284835871889</a>
+                  </p>
+              </div>
+            </div>
+            
+            <div class="block appointments">
+              <h2>Upcoming Appointment</h2>
+              <div class="desktop-d-flex desktop-flex-center">
+                <img src="../img/sales-rep.png" alt="sales rep" />
+                <p>Monday, March 22 @ 2:00pm MT<br>
+                  Anika M, Jewelry Consultant<br>
+                  <a href="#" class="dummy">Zoom Meeting</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="block review">
+            <h2>Write a Review</h2>
+            <div class="desktop-d-flex">
+              <div class="desktop-d-flex">
+                <div class="product-card">
+                  <img class="product" src="../img/chain.png" alt="product" />
+                  <p class="product-title">Bold Link Chain Bracelet<br>in 14k White Gold</p>
+                 </div> 
+                <div class="form">
+                  <img class="stars" src="../img/stars.png" alt="rating stars" />
+                  <h3>Review Title</h3>
+                  <input type="text" id="title" name="title"><br>
+                  <h3>Country</h3>
+                  <input type="country" id="country" name="country"><br>
+                  <h3>State/Province</h3>
+                  <input type="state" id="state" name="state"><br>
+                  <h3>City</h3>
+                  <input type="city" id="city" name="city">
+                </div>
+              </div>
+              <div>
+                <h3>Review</h3>
+                <textarea id="review" name="review" rows="3" cols="10"></textarea>
+                <button>Submit</button>
+              </div>
+            </div>
+           
+          </div>
+    
+          <div class="block recently">
+            <h2>Recently Viewed</h2>
+            <p><a href="#" class="dummy">See All</a></p>
+            <div class="desktop-d-flex">
+              <div> 
+                <img src="../img/earrings.png" alt="product" />
+                <h3>Katie Hoops in 14k Yellow Gold</h3>
+                <p>$545</p>
+              </div>
+              <div> 
+                <img src="../img/pearls.png" alt="product" />
+                <h3>Organic Pearl Hoops in Gold Vermeil</h3>
+                <p>$300</p>
+              </div>
+              <div> 
+                <img src="../img/gold-ring.png" alt="product" />
+                <h3>Wishbone Ring in 14k Yellow Gold</h3>
+                <p>$895</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="block my-style">
+            <div class="quiz-background">
+              <h2>My Style Quiz</h2>
+              <p><a href="#" class="dummy">See All Results</a> | <a href="#" class="dummy">Start Quiz Over</a></p>
+              <div class="desktop-d-flex">
+                <div class="one"> 
+                  <img src="../img/necklace1.png" alt="product" />
+                  <h3>Pave Diamond Cushion Necklace<br>in 14k Yellow Gold</h3>
+                  <p>$450</p>
+                </div>
+                <div class="one"> 
+                  <img src="../img/necklace2.png" alt="product" />
+                  <h3>Marquise Quartz Necklace in<br>Gold Vermeil</h3>
+                  <p>$155</p>
+                </div>
+                <div class="one"> 
+                  <img src="../img/bracelet.png" alt="product" />
+                  <h3>Bold Pearl Double Wrap Bracelet<br>in 14k Yellow Gold</h3>
+                  <p>$155</p>
+                </div>
+              </div>
+              <button>See All Results</button>
+            </div>
+            
+          </div>
+    
+          <div class="block warranty">
+              <div class="desktop-d-flex desktop-flex-center">
+                <div class="one"> 
+                  <img src="../img/repair.jpeg" alt="product" />
+                </div>
+                <div class="two"> 
+                  <h2>Shane Co. Free Lifetime Warranty</h2>
+                  <ul>
+                    <li>Free Cleaning, Maintenance, and Repair</li>
+                    <li>Free Lost Stone Replacement</li>
+                    <li>Free Ring Resizing</li>
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
+    
+            <div class="block trade">
+              
+                  <img src="../img/upgrade.jpg" alt="product" />
+                  <h2>Shane Co. Free Upgrade & Trade-In Program</h2>
+                  
+                  <p class="copy">Need an easy surprise that will leave her speechless? Upgrade the center stone on her engagement ring.<br>Another idea? Make her diamond studs grow! Only pay the difference from what you originally paid.</p>
+                  <p><a href="#" class="dummy">Learn More</a></p>
+            </div>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+      
+          
+       
+        
+      
+      
+    </main>
+
+<footer class="mobile">
+  <img src="../img/mobile-footer.png" alt="footer" />
+</footer>
+<footer class="desktop">
+  <img src="../img/footer.png" alt="footer" />
+</footer>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+   
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+  </body>
+</html>
