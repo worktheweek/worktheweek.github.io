@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Shane Co - Design Your Own Engagement Ring</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/checkout/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e7a983d857.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/additional.css" rel="stylesheet">
+<link href="../css/navbar-top-fixed.css" rel="stylesheet">
+<link href="../css/offcanvas.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+
+
+  </head>
+  <body>
+    
+    <nav class="navbar fixed-top">
+      <div class="banner">
+        <p>Free Shipping & Free Returns</p>
+      </div>
+      <div class="">
+      <div class="review-mobile">
+        
+        <div class="mobile-header d-flex justify-content-between">
+          <p class="nav-icon"><i class="fas fa-bars"></i></p>
+          <p class="heart"><i class="far fa-heart"></i></p>
+          <p class="nav-logo"><img src="../img/logo.png" alt="Shane Co Checkout" width="100px" /></p>
+          <p class="shopping-cart"><i class="fas fa-shopping-cart"></i></p>
+          <p class="user"><i class="fas fa-user"></i></p>
+        </div>
+        <div class="mobile-header mobile-header-two">
+          <p class="search-box"><input type="text" id="search" name="search" placeholder="Search"><i class="fas fa-search"></i></p>
+          <p class="icons">
+            <span class="camera"><i class="fas fa-camera"></i></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    </nav>
+    <div class="container">
+      <main>
+        <div class="review-desktop">
+          <h1><img src="../img/logo.png" alt="Shane Co Checkout" width="120px" /></h1>
+          <p class="lead">Desktop header<br>
+          <a class="dummy">Login</a> or <a class="dummy">Create an account</a></p>
+        </div>
+
+
+        <div class="header">
+          <div class="breadcrumbs">
+            <p><a href="#" class="dummy">Home</a> / <a href="#" class="dummy">Engagement Rings</a> / Design Your Own Engagement Ring</p>
+          </div>
+          <div class="step-ui">
+            <img src="../img/step-ui.png" alt="Step UI"/>
+          </div>
+        <!-- <h1>Design Your Own Engagement Ring</h1> -->
+        <div class="promoted-filters" style="padding: 1rem 0 1rem 0.5rem;">
+          <div class="styles">
+            <h2>Style</h2>
+            <p class="scroller"><img src="../img/style-filter.png" alt="style filter" /></p>
+          </div>
+          <!-- <div class="metal">
+            <h2>Metal Type</h2>
+            <img src="../img/metal-filter.png" alt="metal filter" />
+          </div>
+          <div class="price">
+            <h2>Price</h2>
+            <img src="../img/price-filter.png" alt="price filter" />
+          </div> -->
+        </div>
+      </div>
+      <div class="filter-sort">
+        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+          All Filters
+        </button>
+        <select name="sort" id="sort">
+          <option value="featured">Featured</option>
+          <option value="featured">Bestselling</option>
+          <option value="featured">Newest</option>
+          <option value="featured">Highest Rated</option>
+          <option value="featured">Price: Low to High</option>
+          <option value="featured">Price: High to Low</option>
+        </select>
+
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+          <button class="close-me navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse2" aria-label="Toggle navigation">
+            <i class="fa fa-times"></i>
+          </button>
+          <h2>All Filters</h2>
+          <ul>
+            <li>Style<i class="fas fa-angle-down"></i></li>
+            <li>Metal Type<i class="fas fa-angle-down"></i></li>
+            <li>Price<i class="fas fa-angle-down"></i></li>
+            <li>Center Stone Shape<i class="fas fa-angle-down"></i></li>
+            <li>Band Width<i class="fas fa-angle-down"></i></li>
+            <li>Side Gemstones<i class="fas fa-angle-down"></i></li>
+            <li>Side Gemstone Shape<i class="fas fa-angle-down"></i></li>
+            <li>Side Gemstone Color<i class="fas fa-angle-down"></i></li>
+            <li>Halo Shape<i class="fas fa-angle-down"></i></li>
+            <li>Engravability<i class="fas fa-angle-down"></i></li>
+            <li>Availability<i class="fas fa-angle-down"></i></li>
+          </ul>
+          <button class="apply" id="navbarSideCollapse3">Apply</button>
+          <a href="#" class="dummy">Clear All</a>
+        </div>
+
+
+
+      </div>
+      <div class="product-number">
+        <p>77 items</p>
+      </div>
+      <div class="product-grid">
+        <p><img src="../img/product-card.png" alt="product card" /> <img src="../img/product-card.png" alt="product card" /></p>
+        <p><img src="../img/product-card.png" alt="product card" /> <img src="../img/product-card.png" alt="product card" /></p>
+        <p><img src="../img/product-card.png" alt="product card" /> <img src="../img/product-card.png" alt="product card" /></p>
+        <p><img src="../img/product-card.png" alt="product card" /> <img src="../img/product-card.png" alt="product card" /></p>
+        <p><img src="../img/product-card.png" alt="product card" /> <img src="../img/product-card.png" alt="product card" /></p>
+        <p><img src="../img/product-card.png" alt="product card" /> <img src="../img/product-card.png" alt="product card" /></p>
+        <p><img src="../img/product-card.png" alt="product card" /> <img src="../img/product-card.png" alt="product card" /></p>
+        <p><img src="../img/product-card.png" alt="product card" /> <img src="../img/product-card.png" alt="product card" /></p>
+        
+
+
+      </div>
+      <p class="load-more">32 of 77</p>
+      <button class="load">Load More</button>
+      </main>
+      <div class="more">
+        <h4>Looking for somethings else?</h4>
+        <div class="scroll">
+          <img src="../img/mobile-more-rings.jpg" alt="alt rings" />
+        </div>
+
+      </div>
+      <div class="about">
+        <img src="../img/mobile-about.jpg" alt="about Shane Co" />
+        <div class="copy"><h5>A diamond engagement ring for today and all of your tomorrows.</h5>
+          <p>Find the one you've been looking for with Shane Co.'s signature selection and sparkle. You'll find halo styles, vintage looks, solitaire settings, infinity designs, and unique rings with colored stones. Pick your setting and your stone for an engagement ring that tells your love story.</p></div>
+      </div>
+    
+      
+    </div>
+    <footer>
+      <img src="../img/mobile-footer.png" alt="footer" />
+    </footer>
+    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/offcanvas.js"></script>
+    
+      </body>
+    </html>
+    
